@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>slider-shifting</title>
+  <link rel="stylesheet" href="css/slider.css">
+
+</head>
+<body>
+<div class="slider">
+  <ul class="slider-list">
+    <li class="slider-list-item"><a href="#"><img src="images/6.jpg" alt=""></a></li>
+    <li class="slider-list-item"><a href="#"><img src="images/1.jpg" alt=""></a></li>
+    <li class="slider-list-item"><a href="#"><img src="images/2.jpg" alt=""></a></li>
+    <li class="slider-list-item"><a href="#"><img src="images/3.jpg" alt=""></a></li>
+    <li class="slider-list-item"><a href="#"><img src="images/4.jpg" alt=""></a></li>
+    <li class="slider-list-item"><a href="#"><img src="images/5.jpg" alt=""></a></li>
+    <li class="slider-list-item"><a href="#"><img src="images/6.jpg" alt=""></a></li>
+    <li class="slider-list-item"><a href="#"><img src="images/1.jpg" alt=""></a></li>
+  </ul>
+  <div class="slider-indicator"><i class="slider-indicator-btn active"></i><i class="slider-indicator-btn"></i><i
+    class="slider-indicator-btn"></i><i class="slider-indicator-btn"></i><i class="slider-indicator-btn"></i><i
+    class="slider-indicator-btn"></i></div>
+  <a href="javascript:;" class="slider-control slider-control-prev">&lt;</a>
+  <a href="javascript:;" class="slider-control slider-control-next">&gt;</a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/slider.js"></script>
+<script>
+  $('.slider').slider(6);
+  function fn(a) {
+    console.log(a)
+  }
+  fn();
+</script>
+</body>
+</html>
